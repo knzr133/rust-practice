@@ -16,16 +16,14 @@ fn draw_tree(triangles: u32) {
         });
     });
 
-    // Рисуем ствол ёлки
     let tree_trunk_width = triangles as usize;
     let spaces = " ".repeat((tree_trunk_width - 1) / 2);
-    (0..3).for_each(|_| println!("{}|{}", spaces, "|")); // Стовпчик ёлки
+    (0..3).for_each(|_| println!("{}|{}", spaces, "|"));
 }
 
 fn main() {
-    let triangles = 5; // Количество треугольников
-    println!("Начинаем рисовать ёлку..."); // Сообщаем о начале работы
-    draw_tree(triangles); // Вызываем функцию для рисования ёлки
-    println!("Ёлка нарисована!"); // Сообщаем об окончании работы
+    let triangles = 5;
+    println!("Начинаем рисовать ёлку...");
+    draw_tree(triangles);
+    println!("Ёлка нарисована!");
 }
-s
